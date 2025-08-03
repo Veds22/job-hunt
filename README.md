@@ -1,47 +1,44 @@
-#📌 JobScrapper – AI-Enhanced Job & Internship Aggregator
-A full-stack Django + React web application that scrapes job and internship listings from platforms like Internshala and Wellfound, and curates personalized recommendations based on user preferences. Users can save jobs, track applications, and receive email alerts—all from a clean, modern dashboard.
+# 📌 **JobScrapper – AI-Enhanced Job & Internship Aggregator**
 
-#🚀 Key Features
-🔍 Live Job Scraping: Real-time job data collection using BeautifulSoup and Django management commands.
+**JobScrapper** is a full-stack web application built with **Django** and **React**. It scrapes job and internship listings from platforms like **Internshala** and **Wellfound**, and curates **personalized recommendations** based on user preferences. Users can save jobs, track applications, and receive email alerts — all from a **clean, modern dashboard**.
 
-🎯 User Preferences: Users can register and set their preferred domains (Web Dev, AI/ML, etc.), locations (Remote, Delhi, etc.), and update them anytime.
+---
 
-💌 Email Alerts: Scheduled newsletters based on user-defined frequency (Daily / Weekly).
+## 🚀 **Key Features**
 
-🔐 JWT Authentication: Secure login, registration, and session handling using Django REST Framework and React.
+* 🔍 **Live Job Scraping:** Real-time job data collection using **BeautifulSoup** and Django management commands.
+* 🎯 **User Preferences:** Set preferences like **domain** (Web Dev, AI/ML, etc.) and **location** (Remote, Delhi, etc.) to tailor job recommendations.
+* 📬 **Email Alerts:** Receive scheduled job alerts via email — choose between **Daily** or **Weekly**.
+* 🔐 **JWT Authentication:** Secure login, registration, and session handling using **Django REST Framework** and **React**.
+* 💾 **Saved Jobs:** Save jobs for later and manage your personal job list.
+* 🧠 **(Planned)**: AI-powered **LLM Recommendations** using **OpenAI embeddings** for semantic job matching.
 
-💾 Saved Jobs: Users can save and manage jobs they’re interested in.
+---
 
-🧠 (Planned) LLM-Powered Recommendations: Personalized job suggestions using semantic matching with OpenAI embeddings.
+## 🛠 **Tech Stack**
 
-#🛠 Tech Stack
-Frontend: React + Vite + TailwindCSS
+* **Frontend:** React + Vite + TailwindCSS
+* **Backend:** Django + Django REST Framework
+* **Scraping:** BeautifulSoup, Requests
+* **Authentication:** JWT (via `djangorestframework-simplejwt`)
+* **Database:** SQLite (dev) → PostgreSQL (prod-ready)
+* **Deployment:** Docker (planned)
 
-Backend: Django + Django REST Framework
+---
 
-Scraping: BeautifulSoup, Requests
+## 💡 **Future Enhancements**
 
-Authentication: JWT (djangorestframework-simplejwt)
+* 🌐 Add more platforms (LinkedIn, Foundit, HackerEarth)
+* 🤖 AI chatbot to guide and recommend jobs
+* 📊 Admin dashboard for insights and analytics
+* 🧠 Resume screening & skill-based job matching
+* ↺ Scheduled scraping using **Celery** or **cron jobs**
 
-Database: SQLite (dev) / PostgreSQL (prod-ready)
+---
 
-Deployment-Ready: Configurable for Docker & production
+## 🥪 **Running the Project Locally**
 
-#💡 Future Enhancements
-🌐 More job sources (LinkedIn, Foundit, HackerEarth)
-
-🤖 Chatbot for job recommendations
-
-📊 Admin dashboard with analytics
-
-🧠 AI-powered resume screening & job matching
-
-🔄 Cron or Celery-based background scraping
-
-🧪 Running the Project Locally
-bash
-Copy
-Edit
+```bash
 # Backend
 cd job_alerts/
 python manage.py runserver
@@ -50,3 +47,6 @@ python manage.py runserver
 cd frontend/
 npm install
 npm run dev
+```
+
+---
