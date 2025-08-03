@@ -1,7 +1,7 @@
-📌 JobScrapper – AI-Enhanced Job & Internship Aggregator
+#📌 JobScrapper – AI-Enhanced Job & Internship Aggregator
 A full-stack Django + React web application that scrapes job and internship listings from platforms like Internshala and Wellfound, and curates personalized recommendations based on user preferences. Users can save jobs, track applications, and receive email alerts—all from a clean, modern dashboard.
 
-🚀 Key Features
+#🚀 Key Features
 🔍 Live Job Scraping: Real-time job data collection using BeautifulSoup and Django management commands.
 
 🎯 User Preferences: Users can register and set their preferred domains (Web Dev, AI/ML, etc.), locations (Remote, Delhi, etc.), and update them anytime.
@@ -14,7 +14,7 @@ A full-stack Django + React web application that scrapes job and internship list
 
 🧠 (Planned) LLM-Powered Recommendations: Personalized job suggestions using semantic matching with OpenAI embeddings.
 
-🛠 Tech Stack
+#🛠 Tech Stack
 Frontend: React + Vite + TailwindCSS
 
 Backend: Django + Django REST Framework
@@ -27,7 +27,7 @@ Database: SQLite (dev) / PostgreSQL (prod-ready)
 
 Deployment-Ready: Configurable for Docker & production
 
-💡 Future Enhancements
+#💡 Future Enhancements
 🌐 More job sources (LinkedIn, Foundit, HackerEarth)
 
 🤖 Chatbot for job recommendations
